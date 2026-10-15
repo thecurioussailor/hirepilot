@@ -1,0 +1,13 @@
+{
+  "name": "hirepilot",
+  "private": true,
+  "type": "module",
+  "workspaces": ["packages/shared", "server", "extension"],
+  "scripts": {
+    "dev:server": "npm run dev -w server",
+    "dev:ext": "npm run dev -w extension",
+    "build:ext": "npm run build -w extension",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  }
+}
